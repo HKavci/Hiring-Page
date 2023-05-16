@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+:root {
+  --primary-color: linear-gradient(180deg, #b74534 0%, #c95d4d 100%);
+  --secondary-color: #b74534;
+  --third-color: #ffdcd1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 393px;
+  height: 886px;
+  margin: auto;
+  border: 1px solid black;
+  font-family: "Poppins", sans-serif;
+}
+
+#top-space {
+  height: 94px;
+  border-bottom: 1px solid black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 63px;
+  background: var(--primary-color);
+  border-radius: 0px 0px 15px 15px;
+}
+
+header .logo {
+  width: 40.64px;
+  height: 40.75px;
+  color: #000000;
+}
+
+header select {
+  width: 234px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 9px 6px 6px;
+  gap: 5px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.short-queue .heading {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14.33px;
+  margin-bottom: 6.85px;
+  padding: 0 26.35px;
+}
+
+.short-queue .heading p {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.waiting-group {
+  position: relative;
+}
+
+.waiting-group img {
+  width: 13.5px;
+  height: 15.75px;
+}
+
+.waiting-group p {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  background-color: #ffffff;
+  padding: 0 9px;
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.waiting-group .arrow-icon {
+  position: absolute;
+  bottom: -7px;
+  right: 40px;
+  background-color: #ffffff;
+  
+  width: 20px;
+  height: 14.83px;
+}
+
+.players-table .row td:nth-child(1),
+.players-table .row td:nth-child(2),
+.players-table tr th:nth-child(1),
+.players-table tr th:nth-child(2) {
+  display: none;
+}
+
+.players-table tr:nth-child(4n + 2),
+.players-table tr:nth-child(4n + 3) {
+  background-color: #f5f5f5;
+}
+
+.players-table td,
+th {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.players-table-wrapper {
+  border: 2px solid var(--secondary-color);
+  width: 360px;
+  height: 210px;
+  border-radius: 15px;
+  margin: 0 16.56px 0 15.67px;
+  padding: 16px 0;
+  overflow: hidden;
+}
+
+.players-table {
+  width: 356px;
+  /* height: 210px; */
+  border-collapse: collapse;
+  transform: rotate(-0.21deg);
+  font-size: 12px;
+}
+
+#your-name {color: var(--secondary-color);}
+
+
+.courts {
+  position: relative;
+  width: 360px;
+  height: 286px;
+  background: #f8f8f8;
+  border-radius: 15px;
+  margin: 24.33px 18px 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.courts .compass {
+  position: absolute;
+  top: 9px;
+  right: 7.5px;
+}

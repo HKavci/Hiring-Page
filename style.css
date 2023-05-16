@@ -14,8 +14,8 @@
 }
 
 body {
-  width: 393px;
-  height: 886px;
+  /* width: 393px;
+  height: 886px; */
   margin: auto;
   border: 1px solid black;
   font-family: "Poppins", sans-serif;
@@ -75,7 +75,6 @@ main {
   font-weight: 500;
 }
 
-
 .waiting-group {
   position: relative;
 }
@@ -100,16 +99,9 @@ main {
   bottom: -7px;
   right: 40px;
   background-color: #ffffff;
-  
+
   width: 20px;
   height: 14.83px;
-}
-
-.players-table .row td:nth-child(1),
-.players-table .row td:nth-child(2),
-.players-table tr th:nth-child(1),
-.players-table tr th:nth-child(2) {
-  display: none;
 }
 
 .players-table tr:nth-child(4n + 2),
@@ -119,6 +111,7 @@ main {
 
 .players-table td,
 th {
+  height: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -141,8 +134,18 @@ th {
   font-size: 12px;
 }
 
-#your-name {color: var(--secondary-color);}
+.players-table tr th:nth-child(1),
+.players-table tr th:nth-child(2) {
+  width: 68px;
+}
 
+.bold-name {
+  font-weight: 600;
+}
+
+.your-name {
+  color: var(--secondary-color);
+}
 
 .courts {
   position: relative;
@@ -182,4 +185,65 @@ button {
   color: #ffffff;
   border-radius: 4px;
   border: none;
+}
+
+/*-----------------------Media Queries--------------------*/
+@media screen and (min-width: 992px) {
+  header,
+  #top-space,
+  .heading img,
+  .arrow-icon,
+  .other-info,
+  .players-table td:last-child img {
+    display: none;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  .heading p {
+    margin: auto;
+  }
+
+  .players-table td,
+  th {
+    height: 55px;
+  }
+
+  .players-table-wrapper {
+    width: 886px;
+    height: 957px;
+  }
+
+  .players-table {
+    width: 880px;
+    /* height: 957px; */
+    font-size: 18px;
+  }
+
+  .row img {
+    width: 37px;
+    height: 39.27px;
+  }
+
+  .bold-name,
+  .your-name {
+    color: #000000;
+    font-weight: 400;
+  }
+
+  .courts,
+  .btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .players-table .row td:nth-child(1),
+  .players-table .row td:nth-child(2),
+  .players-table tr th:nth-child(1),
+  .players-table tr th:nth-child(2) {
+    display: none;
+  }
 }

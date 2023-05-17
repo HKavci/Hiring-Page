@@ -246,13 +246,17 @@ button {
   #arrow-icon,
   .other-info,
   .players-table td:last-child img {
-    display: none;
+    display: none !important;
   }
-
+  
   main {
     flex-direction: row;
     gap: 107px;
     width: 1900px;
+  }
+  
+  #announcement-modal {
+    display: none !important;
   }
 
   .heading p {

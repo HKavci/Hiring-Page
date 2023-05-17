@@ -54,6 +54,46 @@ header select {
   font-size: 14px;
 }
 
+#announcement-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 1;
+  top: 1;
+  border-radius: 15px;
+  background-color: blueviolet;
+  color: #ffffff;
+}
+
+#announcement-modal article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  max-height: 500px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+}
+
+#announcement-modal article .announcement {
+  background: var(--third-color);
+  padding: 15px 25px 15px 20px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+#announcement-modal article h2 {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#announcement-modal article .date {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 17px;
+  font-size: 18px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -75,6 +115,10 @@ main {
   gap: 16px;
   font-size: 18px;
   font-weight: 500;
+}
+
+.short-queue .heading img {
+  cursor: pointer;
 }
 
 .waiting-group {
@@ -152,7 +196,7 @@ th {
 .courts {
   position: relative;
   width: 360px;
-  height: 286px;
+  height: 300px;
   background: #f8f8f8;
   border-radius: 15px;
   margin: 24.33px 18px 15px 15px;
@@ -183,6 +227,7 @@ button {
   width: 359px;
   height: 36px;
   margin: auto;
+  margin-bottom: 100px;
   background: var(--primary-color);
   color: #ffffff;
   border-radius: 4px;
@@ -317,7 +362,6 @@ button {
     position: absolute;
     right: -65px;
   }
-
 }
 
 @media screen and (max-width: 993px) {

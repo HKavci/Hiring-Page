@@ -200,10 +200,14 @@ button {
 
   main {
     flex-direction: row;
+    gap: 107px;
   }
 
   .heading p {
     margin: auto;
+  }
+  .heading span {
+    font-size: 24px;
   }
 
   .players-table td,
@@ -214,6 +218,7 @@ button {
   .players-table-wrapper {
     width: 886px;
     height: 957px;
+    margin-bottom: 48px;
   }
 
   .players-table {
@@ -237,6 +242,79 @@ button {
   .btn {
     display: none;
   }
+
+  .announcement-heading {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 14.33px;
+    margin-bottom: 6.85px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 784px;
+    height: 252px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+  }
+
+  article .announcement {
+    background: var(--third-color);
+    padding: 15px 25px 15px 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  article h2 {
+    text-align: center;
+  }
+
+  article .date {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 17px;
+    font-size: 18px;
+  }
+
+  .large-court-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .large-court-container h2 {
+    margin-bottom: 16px;
+  }
+
+  .bottom-courts {
+    margin-left: 10px;
+  }
+  .bottom-courts img:last-child {
+    margin-left: -15px;
+  }
+
+  .large-btn {
+    width: 778px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 55px;
+  }
+
+  .large-courts {
+    position: relative;
+    margin-right: 98px;
+  }
+
+  .compass {
+    position: absolute;
+    right: -65px;
+  }
+
 }
 
 @media screen and (max-width: 993px) {
@@ -245,5 +323,10 @@ button {
   .players-table tr th:nth-child(1),
   .players-table tr th:nth-child(2) {
     display: none;
+  }
+
+  .large-courts {
+    display: none;
+    /* position: relative; */
   }
 }

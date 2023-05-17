@@ -69,7 +69,7 @@ header select {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
+  width: 360px;
   max-height: 500px;
   border: 2px solid var(--secondary-color);
   border-radius: 15px;
@@ -140,14 +140,14 @@ main {
   text-decoration: underline;
 }
 
-.waiting-group .arrow-icon {
+.waiting-group #arrow-icon {
   position: absolute;
   bottom: -7px;
   right: 40px;
   background-color: #ffffff;
-
-  width: 20px;
-  height: 14.83px;
+  cursor: pointer;
+  width: 30px;
+  height: 16px;
 }
 
 .players-table tr:nth-child(4n + 2),
@@ -183,6 +183,10 @@ th {
 .players-table tr th:nth-child(1),
 .players-table tr th:nth-child(2) {
   width: 68px;
+}
+
+.players-table tr:nth-child(n+10):nth-child(-n+17) {
+  /* visibility: hidden; */
 }
 
 .bold-name {
@@ -239,7 +243,7 @@ button {
   header,
   #top-space,
   .heading img,
-  .arrow-icon,
+  #arrow-icon,
   .other-info,
   .players-table td:last-child img {
     display: none;

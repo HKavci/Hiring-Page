@@ -19,3 +19,22 @@ modalIcon.addEventListener("click", () => {
     modal.style.display = "none";
   }
 });
+
+
+// When the expandIcon is clicked, Waiting List table expands, all the list can be seen, arrow icon rotates and innerText ("Show" to "Hide") changes. There is toggle logic here too.
+const expandIcon = document.getElementById("arrow-icon");
+const tableWrapp = document.querySelector(".players-table-wrapper");
+const otherInfo = document.querySelector(".other-info");
+let tableOpen = false;
+
+expandIcon.addEventListener("click", () => {
+    if (!tableOpen) {
+        tableOpen = true;
+        tableWrapp.style.height = "380px"
+        expandIcon.style.transform = "rotate(180deg)"
+        otherInfo.innerText = "Hide other info"
+    } else {
+        tableOpen = false;
+        window.location.reload()
+    }
+});

@@ -57,6 +57,8 @@ header select {
 main {
   display: flex;
   flex-direction: column;
+  width: 390px;
+  margin: auto;
 }
 
 .short-queue .heading {
@@ -201,6 +203,7 @@ button {
   main {
     flex-direction: row;
     gap: 107px;
+    width: 1900px;
   }
 
   .heading p {
@@ -257,7 +260,7 @@ button {
     justify-content: center;
     width: 784px;
     height: 252px;
-    border: 1px solid var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     border-radius: 15px;
   }
 

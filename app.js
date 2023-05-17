@@ -35,6 +35,8 @@ expandIcon.addEventListener("click", () => {
         otherInfo.innerText = "Hide other info"
     } else {
         tableOpen = false;
-        window.location.reload()
+        tableWrapp.style.height = "210px"
+        expandIcon.style.transform = "rotate(360deg)"
+        otherInfo.innerText = "Show other info"
     }
 });

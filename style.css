@@ -183,8 +183,8 @@ main {
   font-weight: 600;
 }
 
-.your-name {
-  color: var(--secondary-color);
+.my-name {
+  color: var(--secondary-color) !important;
 }
 
 .other-info {
@@ -288,8 +288,8 @@ button {
   }
 
   .bold-name,
-  .your-name {
-    color: #000000;
+  .my-name {
+    color: var(--primary-font-color) !important;
     font-weight: 400;
   }
 

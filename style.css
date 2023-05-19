@@ -246,10 +246,6 @@ button {
     display: none;
   }
 
-  .players-table tr td:nth-child(5) {
-    text-align: center;
-  }
-  
   main {
     flex-direction: row;
     /* align-items: center;
@@ -258,13 +254,11 @@ button {
     width: 1900px;
     padding: 5px 40px 0 40px;
   }
-
-
-
+  
   #announcement-modal {
     display: none !important;
   }
-
+  
   .heading p {
     margin: auto;
   }
@@ -272,30 +266,33 @@ button {
     font-size: 24px;
     margin-top: 5px;
   }
-
+  
   .players-table-wrapper {
     width: 886px;
     height: 957px !important;
     margin-top: 15px;
     /* margin-bottom: 88px; */
   }
-
+  
   .players-table {
     width: 880px;
     /* height: 957px; */
     font-size: 18px;
   }
-
+  
   .players-table th {
     color: var(--secondary-font-color);
     height: 55px;
   }
-
+  
   .players-table td {
     color: var(--primary-font-color);
     height: 55px;
   }
-
+  
+  .players-table tr td:nth-child(5) {
+    text-align: center;
+  }
   .row img {
     width: 37px;
     height: 39.27px;

@@ -350,7 +350,7 @@ button {
     color: #393939;
   }
 
-  .large-court-container {
+  .large-court-container{
     display: flex;
     flex-direction: column;
     align-items: center;

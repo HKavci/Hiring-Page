@@ -102,6 +102,9 @@ main {
   margin-bottom: 6.85px;
   padding: 0 26.35px;
 }
+#modal-icon {
+  margin-left: 15px;
+}
 .short-queue .heading p {
   display: flex;
   align-items: center;
@@ -239,15 +242,24 @@ button {
   .heading img,
   #arrow-icon,
   .other-info,
-  .players-table td:last-child img {
+  .players-table tr:nth-child(2n) td:last-child {
     display: none;
   }
 
+  .players-table tr td:nth-child(5) {
+    text-align: center;
+  }
+  
   main {
     flex-direction: row;
-    gap: 107px;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 91px;
     width: 1900px;
+    padding: 5px 40px 0 40px;
   }
+
+
 
   #announcement-modal {
     display: none !important;
@@ -258,12 +270,14 @@ button {
   }
   .heading span {
     font-size: 24px;
+    margin-top: 5px;
   }
 
   .players-table-wrapper {
     width: 886px;
     height: 957px !important;
-    margin-bottom: 48px;
+    margin-top: 15px;
+    /* margin-bottom: 88px; */
   }
 
   .players-table {
@@ -301,8 +315,8 @@ button {
   .announcement-heading {
     font-weight: 500;
     text-align: center;
-    margin-top: 14.33px;
-    margin-bottom: 6.85px;
+    margin-top: 15px;
+    margin-bottom: 18px;
   }
 
   article {
@@ -344,15 +358,21 @@ button {
     margin-top: 16px;
   }
   .large-court-container h2 {
-    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 22px;
     color: var(--secondary-font-color);
   }
 
   .bottom-courts {
     margin-left: 10px;
+    margin-bottom: 0;
   }
   .bottom-courts img:last-child {
     margin-left: -15px;
+  }
+
+  .upper-courts {
+    margin-bottom: 9px;
   }
 
   .large-btn {
